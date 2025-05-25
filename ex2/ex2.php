@@ -1,18 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ex2</title>
-</head>
-<body>
-    <form method="POST">
+<?php
 
-        Informe um nome de usuario:  <input type="text" name="nome" required>
-        Informe uma senha : <input type="text" name="senha" required>
-        <br>
-        <input type="submit" value="Verificar" /><br>
+$usuario = $_POST ['usuario'];
+$senha = $_POST ['senha'];
 
-    </form>
-</body>
-</html>
+
+  while ($senha = 'senha' && $usuario = 'usuario') { 
+    echo"Senha e nome de usuario iguais, <br> Insira uma senha diferente do nome de usuario!";
+    return;
+} 
+echo"Senha valida";
+
+?>
